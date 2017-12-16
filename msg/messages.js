@@ -109,6 +109,12 @@ Blockly.Msg.HELP = 'Help';
 Blockly.Msg.UNDO = 'Undo';
 /// context menu - Undo the previous undo action.\n{{Identical|Redo}}
 Blockly.Msg.REDO = 'Redo';
+/// context menu - Edit the currently selected procedure.
+Blockly.Msg.EDIT_PROCEDURE = 'Edit';
+
+// TODO(#1136): Pick text for this.
+/// context menu - Bring the definition of the procedure into view.
+Blockly.Msg.SHOW_PROCEDURE_DEFINITION = 'Go to definition';
 
 // Variable renaming.
 /// prompt - This message is only seen in the Opera browser.  With most browsers, users can edit numeric values in blocks by just clicking and typing.  Opera does not allows this, so we have to open a new window and prompt users with this message to chanage a value.
@@ -130,9 +136,24 @@ Blockly.Msg.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = 'A variable named "%1" al
 /// alert - Tells the user that the name they entered is already in use for a procedure.
 Blockly.Msg.PROCEDURE_ALREADY_EXISTS = 'A procedure named "%1" already exists.';
 
+// Custom procedure creation
+/// button text - Text on the button used to launch the procedure creation dialogue.
+Blockly.Msg.NEW_PROCEDURE = 'Make a Block...';
+
 // List creation
 /// button text - Text on the button used to launch the list creation dialogue.
 Blockly.Msg.NEW_LIST = 'Create list...';
+/// prompt - Prompts the user to enter the name for a new list
+Blockly.Msg.NEW_LIST_TITLE = 'New list name:';
+
+// Broadcast Message creation
+/// dropdown choice - Create a new message.
+Blockly.Msg.NEW_BROADCAST_MESSAGE = 'New message...';
+/// prompt - Prompts the user to enter the name for a new broadcast message
+Blockly.Msg.NEW_BROADCAST_MESSAGE_TITLE = 'New message name:';
+/// default broadcast message name
+/// (default option in broadcast message dropdown menus)
+Blockly.Msg.DEFAULT_BROADCAST_MESSAGE_NAME = 'message1';
 
 // Variable deletion.
 /// confirm -  Ask the user to confirm their deletion of multiple uses of a variable.
@@ -177,6 +198,12 @@ Blockly.Msg.COLOUR_BLEND_COLOUR2 = 'colour 2';
 Blockly.Msg.COLOUR_BLEND_RATIO = 'ratio';
 /// tooltip - See [https://github.com/google/blockly/wiki/Colour#blending-colours https://github.com/google/blockly/wiki/Colour#blending-colours].
 Blockly.Msg.COLOUR_BLEND_TOOLTIP = 'Blends two colours together with a given ratio (0.0 - 1.0).';
+/// dropdown - Label of the "hue" color component slider
+Blockly.Msg.COLOUR_HUE_LABEL = 'Color';
+/// dropdown - Label of the "saturation" color component slider
+Blockly.Msg.COLOUR_SATURATION_LABEL = 'Saturation';
+/// dropdown - Label of the "brightness" color component slider
+Blockly.Msg.COLOUR_BRIGHTNESS_LABEL = 'Brightness';
 
 // Loop Blocks.
 /// url - Describes 'repeat loops' in computer programs; consider using the translation of the page [https://en.wikipedia.org/wiki/Control_flow http://en.wikipedia.org/wiki/Control_flow].
